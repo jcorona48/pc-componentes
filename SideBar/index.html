@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="SideBar">
+        <header class="toggle-btn">
+            <span id="sidebar-btn">
+                &#9776;
+            </span>
+        </header>
+        <div class="modal-sidebar" id="modal">
+            <main class="sidebar-content">
+                <header class="modal-header">
+                    <span id="close-modal">
+                        &#9776;
+                    </span>
+                </header>
+                
+                <ul class="options-container">
+                <li>
+                    <i class="bi bi-house"></i>
+                    Home
+                </li>
+                    
+                    <li>
+                        <i class="bi bi-house"></i>
+                        About us
+                    </li>
+                </ul>
+                
+            </main>
+        </div>
+    </nav>
+
+    <script>
+        const modal = document.getElementById("modal");
+        const btnclose = document.getElementById("close-modal");
+        const openModal = document.getElementById("sidebar-btn");
+
+    openModal.addEventListener('click', () => {
+        modal.style.display = 'block';
+        setTimeout(() => {
+            modal.classList.add("open");
+        }, 10);
+    });
+
+    btnclose.addEventListener('click', () => {
+        modal.classList.remove("open");
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 300);
+    });
+    </script>
+</body>
+</html>

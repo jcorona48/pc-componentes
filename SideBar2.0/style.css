@@ -1,0 +1,92 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #181818;
+}
+
+
+.SideBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    /* background-color: gray; */
+
+    border: 0.1px solid white;
+}
+
+
+.SideBar header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.bi.bi-list{
+    font-size: 40px;
+    color: white;
+}
+
+.SideBar main .bi{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+
+.SideBar main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.SideBar main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.SideBar main ul li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    /* background-color: red;*/
+}
+
+
+.SideBar footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+
+.SideBar footer:hover, .SideBar header:hover, .SideBar main ul li:hover{
+    background-color: #3f3f3f;
+    cursor: pointer;
+}
+.SideBar footer .bi{
+    font-size: 35px;
+    color: white;
+    padding-right: 5px;
+}
